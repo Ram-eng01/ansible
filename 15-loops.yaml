@@ -1,0 +1,13 @@
+- name: Demo on Loops
+  hosts: localhost
+  tasks:
+  - name: print names
+    ansible.builtin.debug:
+      msg: "Hello {{item}}"
+    loop:
+    - Linux
+    - shell
+    - ansible
+    - terraform
+    - jenkins
+    
